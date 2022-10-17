@@ -7,7 +7,7 @@
 [rewrite_local]
 ;^http://example.com/resource1/4/ url reject-dict
 #lightroom
-^https:\/\/photos\.adobe\.io\/v2\/accounts* url script-response-body https://qxnav.com/rules/QuantumultX/js/yue/Lightroom.js
+^https:\/\/photos\.adobe\.io\/v2\/accounts* url script-response-body https://raw.githubusercontent.com/githubwisdom/My-Quantumult-X/main/JS-file/Lightroom.js
 
 [mitm]
 hostname = photos.adobe.io, lcs-mobile-cops.adobe.io
