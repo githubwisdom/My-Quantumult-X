@@ -4,4 +4,4 @@
 ^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/ url script-response-body https://raw.githubusercontent.com/githubwisdom/My-Quantumult-X/main/JS-file/MeiTuXiuXiu.js
 
 [mitm]
-api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com
+hostname = api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com
