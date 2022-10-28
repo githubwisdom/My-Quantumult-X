@@ -4,8 +4,8 @@
 # 可自行修改指令或者添加搜索引擎
 # mitm：duckduckgo.com
 
-hostname = duckduckgo.com
 
+[rewrite_local]
 # gm (谷歌图片)
 ^https:\/\/duckduckgo.com\/\?q=gm\+([^&]+).+ url 302 https://www.google.com/search?&tbm=isch&q=$1
 
@@ -180,3 +180,6 @@ hostname = duckduckgo.com
 
 
 # ================ Safari全能搜索 结束 ================
+  
+  [mitm]
+  hostname = duckduckgo.com
