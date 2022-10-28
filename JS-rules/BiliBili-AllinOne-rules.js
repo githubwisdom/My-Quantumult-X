@@ -71,7 +71,7 @@ hostname = app.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com, api.bilib
 # ～ BiliBili_哔哩哔哩_繁体CC字幕转中文简体[自行启用]@ddgksf2013
 ;^https?:\/\/i.\.hdslb\.com\/bfs\/subtitle\/.+\.json$ url script-response-body https://raw.githubusercontent.com/githubwisdom/My-Quantumult-X/main/JS-file/Bilibili_cc.js
 # ～ BiliBili_哔哩哔哩_观影页面去广告@ddgksf2013
-^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/cinema\/tab\? url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/bilibili_json.js
+^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/cinema\/tab\? url script-response-body https://raw.githubusercontent.com/githubwisdom/My-Quantumult-X/main/JS-file/Bilibili_json.js
 # ～ BiliBili_哔哩哔哩_应用开屏去广告@bm7
 ^https://app.bilibili.com/x/v2/splash/show url reject-dict
 # ～ BiliBili_哔哩哔哩_应用开屏广告预加载@yjqiang
