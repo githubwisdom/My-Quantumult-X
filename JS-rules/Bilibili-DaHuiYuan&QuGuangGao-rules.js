@@ -36,6 +36,6 @@ bili-json = type=http-response,pattern=^https:\/\/app\.bilibili\.com\/x\/(v2\/(s
 bili-proto = type=http-response,pattern=^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.(view\.v1\.View\/View|dynamic\.v2\.Dynamic\/DynAll)$,script-path=https://raw.githubusercontent.com/githubwisdom/My-Quantumult-X/main/JS-file/Bilibili-proto.js, requires-body=true, binary-body-mode=true, timeout=10
 
 #解锁大会员画质
-BiliBili_HD = type=http-response,pattern=https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)),requires-body=true,script-path=https://github.com/Sunert/Script/raw/master/Script/Bilibili/BiliHD.js
+BiliBili_HD = type=http-response,pattern=https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)),requires-body=true,script-path=https://raw.githubusercontent.com/githubwisdom/My-Quantumult-X/main/JS-file/BiliHD.js
 [MITM]
 hostname = %APPEND% app.bilibili.com,api.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,grpc.biliapi.net
