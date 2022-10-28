@@ -14,9 +14,8 @@
 //URL-REGEX,^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/player,🇺🇸US
 
 [Script]
-youtube-fake = type=http-request,pattern=^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad,requires-body=0,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube-fake.js
-adsinhome = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next)\?,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/youtube.js
-youtube-player = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/player,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube-player.js
-
+youtube-fake = type=http-request,pattern=^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad,requires-body=0,script-path=https://raw.githubusercontent.com/githubwisdom/My-Quantumult-X/main/JS-file/Youtube-fake.js
+adsinhome = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next)\?,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/githubwisdom/My-Quantumult-X/main/JS-file/Youtube.js
+youtube-player = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/player,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/githubwisdom/My-Quantumult-X/main/JS-file/YouTube-player.js
 [MITM]
 hostname = %APPEND% -redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,-s.youtube.com, youtubei.googleapis.com
