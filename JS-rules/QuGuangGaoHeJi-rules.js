@@ -194,7 +194,7 @@ https?:\/\/vip\.storage\.weibo\.com\/feed_cover\/star_\d{0,4}_mobile_new\.png\?v
 ## 知乎处理用户信息,信息流去广告,获取黑名单,预置关键词去广告,回答列表去广告,官方消息去广告,热搜去广告,热榜去广告,评论去广告,解锁关键词屏蔽,移除推荐页顶部项 //api.zhihu.com
 ^https?:\/\/(api\.zhihu\.com|(103\.41\.167\.(226|234|235|236)))\/(people\/|(moments|topstory)(\/|\?)?(recommend|action=|feed_type=)(?!\/people)|settings\/blocked_users|search\/preset_words\?|(v4\/)?questions\/\d+|notifications\/v3\/(message|timeline\/entry\/system_message)|search\/top_search\/tabs\/hot\/items|topstory\/hot-lists?(\?|\/)|(comment_v5\/)?(answers|comments?|articles|pins)\/\d+\/(root_|child_)?comments?|feed-root\/(block|sections\/query\/v2)) url script-response-body https://gitlab.com/RuCu6/QuanX/-/raw/main/Scripts/zhihu.js
 ## 知乎回答内容优化 //www.zhihu.com
-^https?:\/\/(www\.zhihu\.com|(103\.41\.167\.(226|234|235|236)))\/appview\/v2\/answer\/.*(entry=(?!(preload-topstory|preload-search|preload-subscription)))? url script-response-body https://gitlab.com/RuCu6/QuanX/-/raw/main/Scripts/zhihu.js
+^https?:\/\/(www\.zhihu\.com|(103\.41\.167\.(226|234|235|236)))\/appview\/v2\/answer\/.*(entry=(?!(preload-topstory|preload-search|preload-subscription)))? url script-response-body https://raw.githubusercontent.com/githubwisdom/My-Quantumult-X/main/JS-file/zhihu.js
 ## 优化软件配置 //appcloud2.zhihu.com
 ^https?:\/\/appcloud2\.zhihu\.com\/v\d+\/config url script-response-body https://gitlab.com/RuCu6/QuanX/-/raw/main/Scripts/zhihu.js
 ## 拦截知乎开屏广告 //api.zhihu.com
